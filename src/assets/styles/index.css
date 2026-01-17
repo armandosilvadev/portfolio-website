@@ -13,13 +13,14 @@ html {
 
 body {
   color: var(--txt-color);
-  font-family: "Roboto", "Adwaita Sans", sans-serif;
+  font-family: "Nunito", "Roboto", "Adwaita Sans", sans-serif;
   background: var(--bg-color);
 }
 
 a:link {
   color: var(--txt-color);
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 
 a:visited {
@@ -32,4 +33,21 @@ a:hover {
 
 a:active {
   color: var(--txt-active-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.section {
+  padding: 1.6rem 3rem;
 }
