@@ -1,0 +1,9 @@
+:root {
+  /* background colors */
+  --bg-color: #282828;
+
+  /* text colors */
+  --txt-color: #ebdbb2;
+  --txt-hover-color: #fbf1c7;
+  --txt-active-color: #fdf8e3;
+}

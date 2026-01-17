@@ -1,0 +1,35 @@
+@import "./variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--txt-color);
+  font-family: "Roboto", "Adwaita Sans", sans-serif;
+  background: var(--bg-color);
+}
+
+a:link {
+  color: var(--txt-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--txt-color);
+}
+
+a:hover {
+  color: var(--txt-hover-color);
+}
+
+a:active {
+  color: var(--txt-active-color);
+}
