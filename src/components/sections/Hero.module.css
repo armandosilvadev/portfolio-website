@@ -21,13 +21,21 @@
   font-size: 1.6rem;
 }
 
-.logo {
-  filter: brightness(0) saturate(100%) invert(97%) sepia(2%) saturate(5006%)
-    hue-rotate(338deg) brightness(87%) contrast(114%);
+.logoImgArea {
+  position: relative;
+}
+
+.logoImgArea img {
   width: 3.8rem;
 }
 
-.logo:hover {
-  filter: brightness(0) saturate(100%) invert(99%) sepia(93%) saturate(849%)
-    hue-rotate(306deg) brightness(104%) contrast(113%);
+.logoHover {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.logoHover:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 1));
 }

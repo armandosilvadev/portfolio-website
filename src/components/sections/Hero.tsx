@@ -1,16 +1,20 @@
 import styles from "./Hero.module.css";
-import logo from "../../assets/img/logo.svg";
+import logoImg from "../../assets/img/logo.png";
+import logoHoverImg from "../../assets/img/logo_hover.png";
 
 function Hero() {
   return (
     <>
-      <section
-        className={`section ${styles.sectionHero} flex flex-center flex-column`}
-      >
-        <a href="#">
-          <img src={logo} alt="logo" className={styles.logo} />
-        </a>
+      <section className={`section ${styles.sectionHero} flex flex-center`}>
         <div className={`${styles.heroTextBox} flex flex-center flex-column`}>
+          <a
+            href="https://github.com/armandosilvadev"
+            target="_blank"
+            className={styles.logoImgArea}
+          >
+            <img src={logoHoverImg} alt="logo" className={styles.logoHover} />
+            <img src={logoImg} alt="logo" className={styles.logo} />
+          </a>
           <h1>
             <span className={`${styles.name}`}>Hey, I'm Armando!</span> <br />
             <span className={`${styles.developer}`}>
@@ -19,7 +23,7 @@ function Hero() {
           </h1>
           <p>
             Creating pretty websites with a organized, readable and scalable
-            code.
+            website project.
           </p>
         </div>
       </section>
