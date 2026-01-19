@@ -1,0 +1,15 @@
+@import url("../../../assets/styles/variables.css");
+
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 1.4rem;
+  padding: 1.2rem;
+}
+
+.btn--contact {
+  margin-right: auto;
+}
