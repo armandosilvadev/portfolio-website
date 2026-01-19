@@ -18,3 +18,7 @@
   grid-column: -2;
   justify-self: end;
 }
+
+.containerBtn {
+  gap: 2rem;
+}
