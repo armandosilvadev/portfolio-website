@@ -1,0 +1,14 @@
+@import url("../../../assets/styles/variables.css");
+
+.listSocials {
+  list-style: none;
+}
+
+.listSocials li {
+  color: var(--txt-color);
+  transition: all 0.3s ease;
+}
+
+.listSocials li:hover {
+  color: var(--txt-hover-color);
+}
