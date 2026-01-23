@@ -15,7 +15,7 @@ function Hero() {
       text: <i className="fa-brands fa-square-linkedin"></i>,
     },
     {
-      link: "#",
+      link: "https://wa.me/5585996499718",
       text: <i className="fa-brands fa-whatsapp"></i>,
     },
   ];
