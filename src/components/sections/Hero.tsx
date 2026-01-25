@@ -39,7 +39,7 @@ function Hero() {
           </h1>
           <p>
             Creating pretty websites with a organized, readable and scalable
-            website project.
+            project.
           </p>
           <div className={`${styles.containerSocials}`}>
             <Socials
