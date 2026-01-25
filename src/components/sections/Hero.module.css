@@ -1,5 +1,5 @@
 .sectionHero {
-  margin-bottom: 4.4rem;
+  margin-bottom: 6.4rem;
 }
 
 .heroTextBox {
@@ -19,6 +19,7 @@
 
 .containerSocials {
   font-size: 2rem;
+  margin-bottom: 2.8rem;
 }
 
 .name {

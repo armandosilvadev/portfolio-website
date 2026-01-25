@@ -2,6 +2,7 @@ import styles from "./Hero.module.css";
 import logoImg from "../../assets/img/logo.png";
 import logoHoverImg from "../../assets/img/logo_hover.png";
 import Socials from "../ui/Socials/Socials";
+import Button from "../ui/Button/Button";
 import type { Social } from "../../types/social";
 
 function Hero() {
@@ -48,6 +49,16 @@ function Hero() {
               style={{ gap: "1.4rem" }}
             />
           </div>
+          <Button
+            text={
+              <>
+                <span>get to know </span>
+                <i className="fa-solid fa-arrow-right"></i>
+              </>
+            }
+            id="btn--contact"
+            className="btn btn--contact"
+          />
         </div>
       </section>
     </>
