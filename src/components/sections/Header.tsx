@@ -10,7 +10,11 @@ function Header() {
           <Nav />
 
           <div className={`${styles.containerBtn} flex`}>
-            <Button id="contact" className="btn btn--contact" text="contact" />
+            <Button
+              id="btn--contact"
+              className="btn btn--contact"
+              text="contact"
+            />
             <Button
               className="btn btn--color-mode"
               text={<i className="fa-regular fa-moon"></i>}
