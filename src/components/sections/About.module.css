@@ -1,0 +1,32 @@
+@import url("../../assets/styles/variables.css");
+
+.aboutContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: var(--border-radius-1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-1);
+  box-shadow: 4px 4px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.devImage {
+  width: 40rem;
+  grid-row: 1 / -1;
+}
+
+.devDescription {
+  font-size: 2.4rem;
+  width: 50rem;
+}
+
+.stacksBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--border-radius-1);
+  padding: var(--border-radius-1);
+  align-self: stretch;
+}

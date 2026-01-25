@@ -6,4 +6,7 @@
   --txt-color: #ebdbb2;
   --txt-hover-color: #fbf1c7;
   --txt-active-color: #fdf8e3;
+
+  /* boxes styles */
+  --border-radius-1: 1.4rem;
 }
