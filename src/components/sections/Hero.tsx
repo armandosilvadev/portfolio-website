@@ -3,23 +3,9 @@ import logoImg from "../../assets/img/logo.png";
 import logoHoverImg from "../../assets/img/logo_hover.png";
 import Socials from "../ui/Socials/Socials";
 import Button from "../ui/Button/Button";
-import type { Social } from "../../types/social";
+import { socials } from "../../data/socials";
 
 function Hero() {
-  const socials: Social[] = [
-    {
-      link: "https://github.com/armandosilvadev",
-      text: <i className="fa-brands fa-github"></i>,
-    },
-    {
-      link: "https://www.linkedin.com/in/armando-silvadev/",
-      text: <i className="fa-brands fa-square-linkedin"></i>,
-    },
-    {
-      link: "https://wa.me/5585996499718",
-      text: <i className="fa-brands fa-whatsapp"></i>,
-    },
-  ];
   return (
     <>
       <section className={`section ${styles.sectionHero} flex flex-center`}>
@@ -45,6 +31,7 @@ function Hero() {
           <div className={`${styles.containerSocials}`}>
             <Socials
               socials={socials}
+              icon={true}
               className="flex"
               style={{ gap: "1.4rem" }}
             />

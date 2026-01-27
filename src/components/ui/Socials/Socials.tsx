@@ -4,9 +4,16 @@ import type { Social } from "../../../types/social";
 
 interface SocialsProps extends HTMLAttributes<HTMLUListElement> {
   socials: Social[];
+  icon?: boolean;
+  text?: boolean;
 }
 
-function Socials({ socials, ...props }: SocialsProps) {
+function Socials({
+  socials,
+  icon = false,
+  text = false,
+  ...props
+}: SocialsProps) {
   return (
     <>
       <ul {...props} className={`${styles.listSocials} ${props.className}`}>
@@ -15,7 +22,8 @@ function Socials({ socials, ...props }: SocialsProps) {
           return (
             <li key={randomKey}>
               <a href={s.link} target="_blank">
-                {s.text}
+                {icon ? s.icon : ""}
+                {text ? s.text : ""}
               </a>
             </li>
           );
