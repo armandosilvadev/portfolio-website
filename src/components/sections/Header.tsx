@@ -7,7 +7,7 @@ function Header() {
     <>
       <section className={`section ${styles.sectionHeader}`}>
         <header className={`${styles.header} flex flex-center`}>
-          <Nav />
+          <Nav navHead />
 
           <div className={`${styles.containerBtn} flex`}>
             <Button
