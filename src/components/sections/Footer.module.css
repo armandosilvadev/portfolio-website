@@ -1,0 +1,49 @@
+@import url("../../assets/styles/variables.css");
+
+.sectionFooter {
+  border-top: solid 1px var(--border-sections-color);
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    5%,
+    var(--bg-color)
+  );
+}
+
+.footerBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: var(--border-radius-1);
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.footerHeading {
+  margin-bottom: var(--border-radius-1);
+}
+
+.logoBox {
+  font-size: 2.8rem;
+  gap: 5px;
+  font-weight: 800;
+  border-bottom: solid 2px var(--txt-color);
+}
+
+.logoBox img {
+  width: 3rem;
+}
+
+.gmailText {
+  font-weight: 600;
+}
+
+.copyText {
+  color: rgba(235, 219, 178, 0.5);
+  grid-column: 1 / -1;
+  align-self: self-end;
+}
