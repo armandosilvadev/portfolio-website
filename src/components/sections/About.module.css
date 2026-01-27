@@ -1,5 +1,10 @@
 @import url("../../assets/styles/variables.css");
 
+.sectionAbout {
+  padding-top: 4.4rem;
+  margin-bottom: 10rem;
+}
+
 .aboutContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
