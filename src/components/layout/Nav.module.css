@@ -1,4 +1,11 @@
-.navbar {
+@import url("../../assets/styles/variables.css");
+
+.navbarList {
+  list-style: none;
+  display: flex;
+}
+
+.navbarHead {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,9 +15,12 @@
   padding: 1.2rem;
 }
 
-.navbarList {
-  display: flex;
+.navbarHead .navbarList {
   justify-content: space-between;
   gap: 2rem;
-  list-style: none;
+}
+
+.navbarFooter .navbarList {
+  flex-direction: column;
+  gap:;
 }

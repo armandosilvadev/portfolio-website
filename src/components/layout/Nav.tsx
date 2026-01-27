@@ -1,15 +1,25 @@
 import styles from "./Nav.module.css";
 
-function Nav() {
+interface NavProps {
+  navHead?: boolean;
+  navFooter?: boolean;
+}
+
+function Nav({ navHead = false, navFooter = false }: NavProps) {
+  const navbarstyle = navHead
+    ? "navbarHead"
+    : navFooter
+      ? "navbarFooter"
+      : "noStyle";
   return (
     <>
-      <nav className={styles.navbar}>
+      <nav className={styles[navbarstyle]}>
         <ul className={styles.navbarList}>
           <li>
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#portfolios">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
           <li>
             <a href="#about">About</a>
