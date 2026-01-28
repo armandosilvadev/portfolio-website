@@ -4,21 +4,26 @@ import styles from "./Nav.module.css";
 interface NavProps {
   navHead?: boolean;
   navFooter?: boolean;
-  logoHover?: boolean;
+  isLogoSticky: boolean;
 }
 
-function Nav({ navHead = false, navFooter = false }: NavProps) {
-  const navbarstyle = navHead
-    ? "navbarHead"
-    : navFooter
-      ? "navbarFooter"
-      : "noStyle";
+function Nav({ navHead = false, navFooter = false, isLogoSticky }: NavProps) {
+  let navbarstyle: string = "";
+  if (navHead) {
+    navbarstyle = "navbarHead";
+  }
+  if (navFooter) {
+    navbarstyle = "navbarFooter";
+  }
   return (
     <>
-      <nav className={styles[navbarstyle]}>
-        <div className={styles.logoHeaderBox}>
+      <nav className={`${styles[navbarstyle]}`}>
+        <a
+          href="#"
+          className={`${styles.logoHeaderBox} ${styles[isLogoSticky ? "logoHeaderShow" : "logoHeaderHide"]}`}
+        >
           <LogoHover />
-        </div>
+        </a>
         <ul className={styles.navbarList}>
           <li>
             <a href="#">Home</a>
