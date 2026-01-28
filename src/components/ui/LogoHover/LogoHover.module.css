@@ -1,0 +1,14 @@
+.logoHoverBox img {
+  width: 100%;
+}
+
+.logoHover {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.logoHover:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 1));
+}

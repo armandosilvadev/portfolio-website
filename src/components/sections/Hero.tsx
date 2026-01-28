@@ -1,9 +1,8 @@
 import styles from "./Hero.module.css";
-import logoImg from "../../assets/img/logo.png";
-import logoHoverImg from "../../assets/img/logo_hover.png";
 import Socials from "../ui/Socials/Socials";
 import Button from "../ui/Button/Button";
 import { socials } from "../../data/socials";
+import LogoHover from "../ui/LogoHover/LogoHover";
 
 function Hero() {
   return (
@@ -15,8 +14,7 @@ function Hero() {
             target="_blank"
             className={styles.logoImgArea}
           >
-            <img src={logoHoverImg} alt="logo" className={styles.logoHover} />
-            <img src={logoImg} alt="logo" className={styles.logo} />
+            <LogoHover />
           </a>
           <h1>
             <span className={`${styles.name}`}>Hey, I'm Armando!</span> <br />

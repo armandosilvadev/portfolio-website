@@ -1,8 +1,10 @@
+import LogoHover from "../ui/LogoHover/LogoHover";
 import styles from "./Nav.module.css";
 
 interface NavProps {
   navHead?: boolean;
   navFooter?: boolean;
+  logoHover?: boolean;
 }
 
 function Nav({ navHead = false, navFooter = false }: NavProps) {
@@ -14,6 +16,9 @@ function Nav({ navHead = false, navFooter = false }: NavProps) {
   return (
     <>
       <nav className={styles[navbarstyle]}>
+        <div className={styles.logoHeaderBox}>
+          <LogoHover />
+        </div>
         <ul className={styles.navbarList}>
           <li>
             <a href="#">Home</a>

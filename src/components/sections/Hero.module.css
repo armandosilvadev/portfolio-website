@@ -1,4 +1,5 @@
 .sectionHero {
+  margin-top: 4.4rem;
   margin-bottom: 6.4rem;
 }
 
@@ -27,20 +28,6 @@
 }
 
 .logoImgArea {
-  position: relative;
-}
-
-.logoImgArea img {
   width: 3.8rem;
-}
-
-.logoHover {
-  position: absolute;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.logoHover:hover {
-  opacity: 1;
-  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 1));
+  position: relative;
 }

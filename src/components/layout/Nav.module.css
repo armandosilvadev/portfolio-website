@@ -22,5 +22,10 @@
 
 .navbarFooter .navbarList {
   flex-direction: column;
-  gap:;
+}
+
+.logoHeaderBox {
+  width: 3.8rem;
+  position: absolute;
+  top: -100%;
 }
