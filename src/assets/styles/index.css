@@ -66,5 +66,5 @@ a:active {
 }
 
 .section {
-  padding: 1.6rem 3rem;
+  padding: var(--padding-16) var(--width-30);
 }

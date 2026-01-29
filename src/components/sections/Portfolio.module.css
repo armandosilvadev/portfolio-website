@@ -1,3 +1,5 @@
+@import url("../../assets/styles/variables.css");
+
 .sectionPortfolio {
   text-align: center;
   background-color: transparent;
@@ -5,7 +7,7 @@
 }
 
 .sectionPortfolio h2 {
-  font-size: 3.8rem;
+  font-size: var(--logo-img-width-38);
   margin-bottom: 5.6rem;
 }
 

@@ -1,8 +1,8 @@
 @import url("../../assets/styles/variables.css");
 
 .sectionAbout {
-  padding-top: 4.4rem;
-  margin-bottom: 10rem;
+  padding-top: var(--margin-44);
+  margin-bottom: var(--margin-100);
 }
 
 .aboutContainer {
@@ -19,13 +19,13 @@
 }
 
 .devImage {
-  width: 40rem;
+  width: var(--width-400);
   grid-row: 1 / -1;
 }
 
 .devDescription {
-  font-size: 2.4rem;
-  width: 50rem;
+  font-size: var(--paragraph-font-24);
+  width: var(--width-500);
 }
 
 .stacksBox {

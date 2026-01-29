@@ -1,6 +1,8 @@
+@import url("../../assets/styles/variables.css");
+
 .sectionHero {
-  margin-top: 4.4rem;
-  margin-bottom: 6.4rem;
+  margin-top: var(--margin-44);
+  margin-bottom: var(--margin-64);
 }
 
 .heroTextBox {
@@ -9,17 +11,18 @@
 }
 
 .heroTextBox h1 {
-  font-size: 5.8rem;
+  font-size: var(--heading-1-font-58);
 }
 
 .heroTextBox p {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: var(--paragraph-font-20);
   font-weight: 500;
-  width: 39rem;
+  width: var(--paragraph-width-390);
 }
 
 .containerSocials {
-  font-size: 2rem;
+  font-size: var(--paragraph-font-20);
   margin-bottom: 2.8rem;
 }
 
@@ -28,6 +31,6 @@
 }
 
 .logoImgArea {
-  width: 3.8rem;
+  width: var(--logo-img-width-38);
   position: relative;
 }

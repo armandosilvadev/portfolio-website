@@ -9,52 +9,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: var(--btn-font-size-14);
   font-weight: 700;
   text-transform: uppercase;
-  padding: 1.2rem;
+  padding: var(--btn-font-size-14);
 }
 
 .navbarHead .navbarList {
   justify-content: space-between;
-  gap: 2rem;
+  gap: var(--paragraph-font-20);
 }
 
 .navbarFooter .navbarList {
   flex-direction: column;
-}
-
-.logoHeaderBox {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.1s linear;
-}
-
-@keyframes bounceLeft {
-  0% {
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-  }
-  90% {
-    left: 3rem;
-    opacity: 0.9;
-  }
-  100% {
-    left: 5rem;
-    opacity: 1;
-  }
-}
-
-.logoHeaderHide {
-  opacity: 0;
-  width: 0;
-}
-
-.logoHeaderShow {
-  opacity: 1;
-  width: 3.8rem;
-  left: 5rem;
-  animation: bounceLeft 0.3s linear;
 }
