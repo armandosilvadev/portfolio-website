@@ -16,7 +16,7 @@ function Footer() {
 
           <div className={styles.quickNav}>
             <h4 className={styles.footerHeading}>Navigation</h4>
-            <Nav navFooter isLogoSticky={false} />
+            <Nav navFooter />
           </div>
 
           <div className={styles.fullLogoBox}>
