@@ -68,3 +68,11 @@ a:active {
 .section {
   padding: var(--padding-16) var(--width-30);
 }
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  body::before {
+    background: none;
+  }
+}
