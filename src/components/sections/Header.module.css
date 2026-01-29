@@ -1,8 +1,24 @@
 @import url("../../assets/styles/variables.css");
 
+@keyframes showHeader {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes hideHeader {
+  from {
+    top: 0;
+  }
+  to {
+    top: -50%;
+  }
+}
+
 .sectionHeader {
-  position: sticky;
-  top: 0;
   border-bottom: solid 1px #504945;
   background: linear-gradient(
     to bottom,
@@ -10,10 +26,22 @@
     90%,
     rgb(40, 40, 40, 0.9)
   );
-
   backdrop-filter: blur(10px);
-  z-index: 1000;
   transition: all 0.3s ease;
+}
+
+.showHeader {
+  position: sticky;
+  animation: showHeader 0.3s ease;
+  top: 0;
+  z-index: 1000;
+}
+
+.hideHeader {
+  position: sticky;
+  animation: hideHeader 0.3s ease;
+  top: -50%;
+  z-index: 1000;
 }
 
 .header {

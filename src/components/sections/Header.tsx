@@ -4,22 +4,30 @@ import Button from "../ui/Button/Button.tsx";
 import { useEffect, useState } from "react";
 
 function Header() {
-  const [isLogoSticky, setIsLogoSticky] = useState<boolean>(false);
+  const [showHeader, setShowHeader] = useState<boolean>(true);
+  const [scrollY, setScrollY] = useState<number>(0);
 
   useEffect(() => {
-    const handleIsLogoSticky = () => {
-      setIsLogoSticky(window.scrollY > 110);
+    const handleIsScrollY = () => {
+      setScrollY(window.scrollY);
+      if (window.scrollY < scrollY) {
+        setShowHeader(true);
+      } else if (window.scrollY > scrollY) {
+        setShowHeader(false);
+      }
     };
 
-    window.addEventListener("scroll", handleIsLogoSticky);
-    return window.addEventListener("scroll", handleIsLogoSticky);
+    window.addEventListener("scroll", handleIsScrollY);
+    return window.addEventListener("scroll", handleIsScrollY);
   });
 
   return (
     <>
-      <section className={`section ${styles.sectionHeader}`}>
+      <section
+        className={`section ${styles.sectionHeader} ${styles[showHeader ? "showHeader" : "hideHeader"]}`}
+      >
         <header className={`${styles.header} flex flex-center`}>
-          <Nav navHead isLogoSticky={isLogoSticky} />
+          <Nav navHead />
 
           <div className={`${styles.containerBtn} flex`}>
             <Button
