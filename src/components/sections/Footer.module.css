@@ -47,3 +47,26 @@
   grid-column: 1 / -1;
   align-self: self-end;
 }
+
+@media (max-width: 530px) {
+  .footerBox {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--padding-10);
+  }
+
+  .footerBox div {
+    grid-column: span 2;
+  }
+
+  .footerBox .fullLogoBox {
+    grid-column: 2 / span 2;
+  }
+
+  .logoBox {
+    padding: var(--padding-10);
+  }
+
+  .gmailText {
+    font-size: 1.3rem;
+  }
+}
