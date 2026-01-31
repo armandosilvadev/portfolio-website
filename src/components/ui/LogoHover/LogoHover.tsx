@@ -1,5 +1,5 @@
-import logoImg from "../../../assets/img/logo.png";
-import logoHoverImg from "../../../assets/img/logo_hover.png";
+import logoImg from "../../../assets/img/logo_light.png";
+import logoHoverImg from "../../../assets/img/logo_hover_light.png";
 import styles from "./LogoHover.module.css";
 
 function LogoHover() {

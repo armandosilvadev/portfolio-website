@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 import Socials from "../ui/Socials/Socials";
 import { socials } from "../../data/socials";
 import Nav from "../layout/Nav";
-import logoImg from "../../assets/img/logo.png";
+import logoImg from "../../assets/img/logo_light.png";
 
 function Footer() {
   return (

@@ -1,7 +1,7 @@
 import AboutBox from "../ui/AboutBox/AboutBox";
 import { abouts } from "../../data/abouts";
 import styles from "./About.module.css";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logo_light.png";
 
 function About() {
   return (
