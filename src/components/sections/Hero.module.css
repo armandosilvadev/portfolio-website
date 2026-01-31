@@ -27,7 +27,8 @@
 }
 
 .name {
-  font-size: 1.8rem;
+  font-size: var(--paragraph-font-20);
+  font-weight: 700;
 }
 
 .logoImgArea {
