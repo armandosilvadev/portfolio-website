@@ -15,7 +15,7 @@ function Nav({ navHead = false, navFooter = false }: NavProps) {
   }
   return (
     <>
-      <nav className={`${styles[navbarstyle]}`}>
+      <nav className={`${styles[navbarstyle]} `}>
         <ul className={styles.navbarList}>
           <li>
             <a href="#">Home</a>

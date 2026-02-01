@@ -18,7 +18,9 @@ function Header() {
     };
 
     window.addEventListener("scroll", handleIsScrollY);
-    return window.addEventListener("scroll", handleIsScrollY);
+    return () => {
+      window.removeEventListener("scroll", handleIsScrollY);
+    };
   });
 
   return (
