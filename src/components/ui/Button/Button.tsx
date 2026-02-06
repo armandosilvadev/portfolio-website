@@ -7,7 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string | React.ReactNode;
 }
 
-function Button({ id, className, text }: ButtonProps) {
+function Button({ id, className, text, ...props }: ButtonProps) {
   const classNames: string = className
     .split(" ")
     .map((c) => styles[c])
@@ -15,7 +15,7 @@ function Button({ id, className, text }: ButtonProps) {
 
   return (
     <>
-      <button id={id} className={classNames}>
+      <button {...props} id={id} className={classNames}>
         {text}
       </button>
     </>

@@ -1,10 +1,11 @@
 @import url("../../../assets/styles/variables.css");
 
-.btn {
+.btn,
+.show {
   border: none;
   color: var(--bg-color);
   font-family: inherit;
-  font-size: var(--btn-font-size-14);
+  /* font-size: var(--btn-font-size-14); */
   font-weight: 800;
   text-transform: uppercase;
   border-radius: var(--btn-font-size-14);
@@ -13,7 +14,8 @@
   background-color: var(--txt-color);
 }
 
-.btn--color-mode {
+.btn--color-mode,
+.btn--menu {
   color: var(--txt-color);
   font-size: var(--btn-font-size-14);
   font-weight: 700;
@@ -21,13 +23,15 @@
   transition: all 0.3s ease;
 }
 
-.btn--color-mode:hover {
+.btn--color-mode:hover,
+.btn--menu:hover {
   color: var(--txt-hover-color);
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 1))
     drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
 }
 
-.btn--color-mode:active {
+.btn--color-mode:active,
+.btn--menu:active {
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
 }
 
@@ -45,6 +49,11 @@
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
 }
 
+.btn--menu {
+  justify-self: self-start;
+  font-size: var(--paragraph-font-24);
+}
+
 .btn--close {
   background-color: transparent;
   font-size: var(--margin-64);
@@ -60,4 +69,14 @@
 
 .btn--close:active {
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .btn--color-mode {
+    font-size: var(--paragraph-font-24);
+  }
 }

@@ -15,6 +15,12 @@
   padding: var(--btn-font-size-14);
 }
 
+.navbarFooter {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: var(--border-radius-1);
+}
+
 .navbarHead .navbarList {
   justify-content: space-between;
   gap: var(--paragraph-font-20);
@@ -22,4 +28,5 @@
 
 .navbarFooter .navbarList {
   flex-direction: column;
+  align-items: start;
 }
