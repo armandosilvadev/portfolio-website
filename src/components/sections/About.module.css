@@ -8,7 +8,6 @@
 .aboutContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   font-size: var(--border-radius-1);
@@ -18,22 +17,31 @@
   box-shadow: 4px 4px 20px 10px rgba(0, 0, 0, 0.1);
 }
 
-.devImage {
-  width: var(--width-400);
-  grid-row: 1 / -1;
-}
-
 .devDescription {
   font-size: var(--paragraph-font-24);
   width: var(--width-500);
+  padding: var(--padding-16);
 }
 
 .stacksBox {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   gap: var(--border-radius-1);
   padding: var(--border-radius-1);
-  align-self: stretch;
+  /* align-self: stretch; */
+}
+
+.stacksBox {
+  grid-template-columns: repeat(4, 1fr);
+  /* align-self: stretch; */
+}
+
+.stacksBox div {
+  grid-column: span 2;
+}
+
+.stacksBox div:last-child:nth-child(2n + 1) {
+  grid-column-end: 4;
 }
 
 /*****************/
@@ -45,7 +53,6 @@
 @media (max-width: 1200px) {
   .stacksBox {
     grid-template-columns: repeat(4, 1fr);
-    align-self: stretch;
   }
 
   .stacksBox div {
@@ -57,25 +64,17 @@
   }
 }
 
-/* small tablets */
+/* tablets */
 
-@media (max-width: 810px) {
-  .aboutContainer {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .devImage {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-  }
-
+@media (max-width: 720px) {
   .devDescription {
-    grid-column: 3 / -1;
+    text-align: center;
+    grid-column: 1 / -1;
+    width: 60%;
   }
 
   .stacksBox {
     grid-template-columns: repeat(3, 1fr);
-    grid-row: 2;
     grid-column: 1 / -1;
   }
 
@@ -106,20 +105,11 @@
 @media (max-width: 450px) {
   .aboutContainer {
     display: grid;
-    gap: 0;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
-  .devImage {
-    grid-row: 1;
-    grid-column: auto;
   }
 
   .devDescription {
-    font-size: 1.3rem;
     grid-row: 2;
-    padding: 1rem;
     grid-column: 1 / span 2;
     width: 95%;
   }

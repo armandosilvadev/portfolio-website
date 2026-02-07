@@ -1,7 +1,6 @@
 import AboutBox from "../ui/AboutBox/AboutBox";
 import { abouts } from "../../data/abouts";
 import styles from "./About.module.css";
-import logo from "../../assets/img/logo_light.png";
 
 function About() {
   return (
@@ -10,13 +9,9 @@ function About() {
         id="about"
         className={`section ${styles.sectionAbout} flex flex-center`}
       >
-        <div className={`${styles.aboutContainer}`}>
-          <img
-            src={logo}
-            width={"100%"}
-            alt="dev image"
-            className={styles.devImage}
-          />
+        <div
+          className={`${styles.aboutContainer} flex flex-center flex-column`}
+        >
           <p className={styles.devDescription}>
             Hi, I'm <strong>Armando</strong>, a{" "}
             <strong>Front-End Developer</strong> with more than{" "}
