@@ -3,6 +3,7 @@ import Nav from "../layout/Nav.tsx";
 import Button from "../ui/Button/Button.tsx";
 import { useEffect, useState } from "react";
 import NavMobile from "../layout/NavMobile.tsx";
+import DarkMode from "../ui/DarkMode/DarkMode.tsx";
 
 function Header() {
   const [showHeader, setShowHeader] = useState<boolean>(true);
@@ -51,10 +52,7 @@ function Header() {
               className="btn btn--contact"
               text="contact"
             />
-            <Button
-              className="btn btn--color-mode"
-              text={<i className="fa-regular fa-moon"></i>}
-            />
+            <DarkMode />
           </div>
         </header>
       </section>

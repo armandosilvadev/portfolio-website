@@ -43,7 +43,7 @@
 }
 
 .copyText {
-  color: rgba(235, 219, 178, 0.5);
+  color: var(--txt-copy-color);
   grid-column: 1 / -1;
   align-self: self-end;
 }

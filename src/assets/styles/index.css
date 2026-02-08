@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 html {
@@ -21,7 +22,7 @@ body {
 
 body::before {
   position: absolute;
-  background-image: url("../img/logo_light.png");
+  background-image: url("../img/logo_lighter.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;

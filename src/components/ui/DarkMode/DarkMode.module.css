@@ -1,0 +1,11 @@
+@import url("../../../assets/styles/variables.css");
+
+.darkModeInput {
+  appearance: none;
+}
+
+.darkModeLabel {
+  cursor: pointer;
+  font-size: var(--paragraph-font-20);
+  margin-left: var(--paragraph-font-20);
+}
