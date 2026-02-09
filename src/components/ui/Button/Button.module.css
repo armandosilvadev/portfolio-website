@@ -5,7 +5,7 @@
   border: none;
   color: var(--bg-color);
   font-family: inherit;
-  /* font-size: var(--btn-font-size-14); */
+  font-size: var(--btn-font-size-14);
   font-weight: 800;
   text-transform: uppercase;
   border-radius: var(--btn-font-size-14);
@@ -35,16 +35,20 @@
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
 }
 
-.btn--contact {
+.btn--contact,
+.btnContact {
+  color: var(--bg-color) !important;
   transition: all 0.3s ease;
 }
 
-.btn--contact:hover {
+.btn--contact:hover,
+.btnContact {
   background-color: var(--txt-hover-color);
   box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.1);
 }
 
-.btn--contact:active {
+.btn--contact:active,
+.btnContact {
   background-color: var(--txt-color);
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
 }

@@ -37,7 +37,7 @@ function Hero() {
           <Button
             text={
               <>
-                <span>get to know </span>
+                <span>get in contact </span>
                 <i className="fa-solid fa-arrow-right"></i>
               </>
             }

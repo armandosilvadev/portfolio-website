@@ -1,7 +1,7 @@
 import logoImg from "../../../assets/img/logo_lighter.png";
-import logoLightImg from "../../../assets/img/logo_light.png";
+import logoLightImg from "../../../assets/img/logo_light_lighter.png";
 import logoHoverImg from "../../../assets/img/logo_hover_lighter.png";
-import logoHoverLightImg from "../../../assets/img/logo_hover_lighter.png";
+import logoHoverLightImg from "../../../assets/img/logo_light_hover_lighter.png";
 import styles from "./LogoHover.module.css";
 import { useEffect, useState } from "react";
 

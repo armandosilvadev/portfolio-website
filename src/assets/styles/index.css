@@ -35,6 +35,11 @@ body::before {
   filter: blur(20px) blur(20px);
 }
 
+body[data-theme="light"]::before {
+  background-image: url("../img/logo_light.png");
+  filter: blur(20px);
+}
+
 a:link {
   color: var(--txt-color);
   text-decoration: none;

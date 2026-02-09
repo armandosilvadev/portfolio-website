@@ -13,11 +13,23 @@ function Button({ id, className, text, ...props }: ButtonProps) {
     .map((c) => styles[c])
     .join(" ");
 
+  const contact = id === "btn--contact";
+
   return (
     <>
-      <button {...props} id={id} className={classNames}>
-        {text}
-      </button>
+      {contact ? (
+        <a
+          href="https://wa.me/5585996499718"
+          target="_blank"
+          className={`${styles.btnContact} ${styles.btn} flex flex-center`}
+        >
+          {text}
+        </a>
+      ) : (
+        <button {...props} id={id} className={classNames}>
+          {text}
+        </button>
+      )}
     </>
   );
 }
