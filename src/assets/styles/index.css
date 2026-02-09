@@ -36,7 +36,7 @@ body::before {
 }
 
 body[data-theme="light"]::before {
-  background-image: url("../img/logo_light.png");
+  background-image: url("../img/logo_light_lighter.png");
   filter: blur(20px);
 }
 
@@ -79,6 +79,9 @@ a:active {
 
 @media (max-width: 1200px) {
   body::before {
+    background: none;
+  }
+  body[data-theme="light"]::before {
     background: none;
   }
 }
