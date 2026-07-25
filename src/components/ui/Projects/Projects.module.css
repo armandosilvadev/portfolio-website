@@ -33,6 +33,7 @@
 
 .detailsBox h3 {
   font-size: var(--paragraph-font-20);
+  margin-bottom: var(--padding-10);
 }
 
 .detailsBox .links {

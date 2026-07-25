@@ -28,7 +28,7 @@ function Projects({ projects, ...props }: ProjectProps) {
               <div className={styles.links}>
                 {project.link && (
                   <a
-                    href={project.github}
+                    href={project.link}
                     target='_blank'
                   >
                     <i className='fa-solid fa-arrow-up-right-from-square'></i>
