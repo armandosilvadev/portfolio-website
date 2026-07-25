@@ -25,8 +25,16 @@
       transparent
     );
   }
+  
+  .show {
+    max-height: none;
+    mask-image: none;
+  }
 
   .showMoreBtnContainer {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--btn-font-size-14);
   }
 }
