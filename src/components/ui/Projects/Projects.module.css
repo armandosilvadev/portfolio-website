@@ -1,27 +1,11 @@
 @import url('../../../assets/styles/variables.css');
 
-.project {
+.projectsContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px) blur(10px) blur(10px) blur(10px);
-  border: solid 1px var(--txt-color);
-  border-radius: 1.4rem;
-  box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.01);
 }
-
-.project img {
-  width: 20rem;
-  align-self: center;
-  justify-self: center;
-}
-
-.descriptionBox {
-  text-align: left;
-  justify-content: center;
-}
-
 .projectBox {
   position: relative;
   top: 0;
@@ -41,4 +25,93 @@
 
 .projectBox img {
   width: 100%;
+}
+
+.detailsBox {
+  padding: var(--padding-10);
+}
+
+.detailsBox h3 {
+  font-size: var(--paragraph-font-20);
+}
+
+.detailsBox .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-8);
+  font-size: var(--btn-font-size-14);
+  margin-bottom: var(--btn-font-size-14);
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+}
+
+.links a span {
+  margin-left: 3px;
+}
+
+.description {
+  font-size: var(--btn-font-size-14);
+  text-align: left;
+  white-space: pre-line;
+  margin-bottom: var(--btn-font-size-14);
+}
+
+.carouselTechStack {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.carouselTechStack::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselTechStack:hover .carouselTrack {
+  animation-play-state: paused;
+}
+
+.carouselTrack {
+  display: flex;
+  align-items: center;
+  animation: scroll 15s infinite linear;
+}
+
+.listTechStack {
+  display: flex;
+  align-items: center;
+  gap: var(--size-8);
+  padding-right: var(--size-8);
+  width: max-content;
+  list-style: none;
+}
+
+.listTechStack li {
+  flex: 0 0 auto;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.listTechStack .frontend {
+  border: solid 1px blue;
+}
+
+.listTechStack .backend {
+  border: solid 1px red;
+}
+
+.listTechStack .database {
+  border: solid 1px gray;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
