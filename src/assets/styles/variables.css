@@ -15,6 +15,20 @@
   --txt-active-color: #fdf8e3;
   --txt-copy-color: rgba(235, 219, 178, 0.5);
 
+  /* general colors */
+  --blue-color: #458588;
+  --blue-hover-color: #4d9fa3;
+  --blue-color-transparent: rgba(69, 133, 136, 0.1);
+  --blue-hover-color-transparent: rgba(69, 133, 136, 0.2);
+  --red-color: #cc241d;
+  --red-hover-color: #e5261f;
+  --red-color-transparent: rgba(204, 36, 29, 0.1);
+  --red-hover-color-transparent: rgba(204, 36, 29, 0.2);
+  --gray-color: #928374;
+  --gray-hover-color: #9f9284;
+  --gray-color-transparent: rgba(146, 131, 116, 0.1);
+  --gray-hover-color-transparent: rgba(146, 131, 116, 0.2);
+
   /* general sizes */
   --size-8: clamp(0.2rem, 0.5856vw, 1.6rem);
 
@@ -48,7 +62,7 @@
   --border-sections-color: #504945;
 }
 
-[data-theme="light"] {
+[data-theme='light'] {
   /* background colors */
   --bg-color: #fbf1c7; /* gruvbox light bg */
   --bg-color-transparent: rgba(251, 241, 199, 0.85);

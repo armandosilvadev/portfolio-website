@@ -64,6 +64,7 @@
   display: flex;
   width: 100%;
   overflow-x: auto;
+  padding: var(--size-8);
 }
 
 .carouselTechStack::-webkit-scrollbar {
@@ -77,11 +78,13 @@
 .carouselTrack {
   display: flex;
   align-items: center;
+  width: max-content;
   animation: scroll 15s infinite linear;
 }
 
 .listTechStack {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   gap: var(--size-8);
   padding-right: var(--size-8);
@@ -91,20 +94,40 @@
 
 .listTechStack li {
   flex: 0 0 auto;
-  border-radius: 5px;
-  padding: 10px;
+  font-size: var(--padding-10);
+  font-weight: 600;
+  border-radius: var(--border-radius-1);
+  padding: 8px 2rem;
 }
 
 .listTechStack .frontend {
-  border: solid 1px blue;
+  border: solid 1px var(--blue-color);
+  background-color: var(--blue-color-transparent);
+}
+
+.listTechStack .frontend:hover {
+  border-color: var(--blue-hover-color);
+  background-color: var(--blue-hover-color-transparent);
 }
 
 .listTechStack .backend {
-  border: solid 1px red;
+  border: solid 1px var(--red-color);
+  background-color: var(--red-color-transparent);
+}
+
+.listTechStack .backend:hover {
+  border-color: var(--red-hover-color);
+  background-color: var(--red-hover-color-transparent);
 }
 
 .listTechStack .database {
-  border: solid 1px gray;
+  border: solid 1px var(--gray-color);
+  background-color: var(--gray-color-transparent);
+}
+
+.listTechStack .database:hover {
+  border-color: var(--gray-hover-color);
+  background-color: var(--gray-hover-color-transparent);
 }
 
 @keyframes scroll {
