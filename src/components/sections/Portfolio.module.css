@@ -1,4 +1,4 @@
-@import url("../../assets/styles/variables.css");
+@import url('../../assets/styles/variables.css');
 
 .sectionPortfolio {
   text-align: center;
@@ -6,15 +6,27 @@
   margin-bottom: 6.4rem;
 }
 
-.sectionPortfolio h2 {
-  font-size: var(--logo-img-width-38);
-  margin-bottom: 5.6rem;
+.showMoreBtnContainer {
+  display: none;
 }
 
-.projectItem {
-  grid-column: span 2;
-}
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
 
-.projectItem:last-child:nth-child(2n + 1) {
-  grid-column-end: 4;
+/* tablets */
+
+@media (max-width: 720px) {
+  .containerProjects {
+    max-height: 45rem;
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 80%,
+      transparent
+    );
+  }
+
+  .showMoreBtnContainer {
+    display: block;
+  }
 }

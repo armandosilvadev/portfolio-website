@@ -130,3 +130,32 @@
     transform: translateX(-50%);
   }
 }
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* smaller desktops */
+
+@media (max-width: 1200px) {
+  .projectsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* tablets */
+
+@media (max-width: 720px) {
+  .projectsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* slight big phone */
+
+@media (max-width: 520px) {
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
