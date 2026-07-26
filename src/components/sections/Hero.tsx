@@ -1,8 +1,8 @@
-import styles from "./Hero.module.css";
-import Socials from "../ui/Socials/Socials";
-import Button from "../ui/Button/Button";
-import { socials } from "../../data/socials";
-import LogoHover from "../ui/LogoHover/LogoHover";
+import styles from './Hero.module.css';
+import Socials from '../ui/Socials/Socials';
+import Button from '../ui/Button/Button';
+import { socials } from '../../data/socials';
+import LogoHover from '../ui/LogoHover/LogoHover';
 
 function Hero() {
   return (
@@ -10,8 +10,9 @@ function Hero() {
       <section className={`section ${styles.sectionHero} flex flex-center`}>
         <div className={`${styles.heroTextBox} flex flex-center flex-column`}>
           <a
-            href="https://github.com/armandosilvadev"
-            target="_blank"
+            rel='noopener noreferrer'
+            href='https://github.com/armandosilvadev'
+            target='_blank'
             className={styles.logoImgArea}
           >
             <LogoHover />
@@ -19,30 +20,32 @@ function Hero() {
           <h1>
             <span className={`${styles.name}`}>Hey, I'm Armando!</span> <br />
             <span className={`${styles.developer}`}>
-              React/TypeScript Developer.
+              Full-Stack Software Developer.
             </span>
           </h1>
           <p>
-            Creating pretty websites with a organized, readable and scalable
-            project.
+            Building modern software with{' '}
+            <span>React, TypeScript, Java, Spring Boot and PostgreSQL</span>{' '}
+            while focusing on clean code, scalable architecture and great user
+            experiences.
           </p>
           <div className={`${styles.containerSocials}`}>
             <Socials
               socials={socials}
               icon={true}
-              className="flex"
-              style={{ gap: "1.4rem" }}
+              className='flex'
+              style={{ gap: '1.4rem' }}
             />
           </div>
           <Button
             text={
               <>
                 <span>get in contact </span>
-                <i className="fa-solid fa-arrow-right"></i>
+                <i className='fa-solid fa-arrow-right'></i>
               </>
             }
-            id="btn--contact"
-            className="btn btn--contact"
+            id='btn--contact'
+            className='btn btn--contact'
           />
         </div>
       </section>

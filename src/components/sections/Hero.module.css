@@ -18,7 +18,11 @@
   /* font-size: 2rem; */
   font-size: var(--paragraph-font-20);
   font-weight: 500;
-  width: var(--paragraph-width-390);
+  width: var(--width-600);
+}
+
+.heroTextBox p span {
+  font-weight: 700;
 }
 
 .containerSocials {

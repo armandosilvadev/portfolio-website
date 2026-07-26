@@ -44,6 +44,8 @@
   --logo-img-width-38: clamp(2.8rem, 3.5vw, 8rem);
   --width-400: clamp(10rem, 29.28vw, 60rem);
   --width-500: clamp(12.5rem, 36.6vw, 65rem);
+  --width-550: clamp(13.75rem, 40vw, 71.5rem);
+  --width-600: clamp(15rem, 43.9vw, 78rem);
   --width-30: clamp(2.8rem, 2.1961vw, 3.8rem);
 
   /* margin sizes */
