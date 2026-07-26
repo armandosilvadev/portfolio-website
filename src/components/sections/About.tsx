@@ -1,26 +1,27 @@
-import AboutBox from "../ui/AboutBox/AboutBox";
-import { abouts } from "../../data/abouts";
-import styles from "./About.module.css";
+import AboutBox from '../ui/AboutBox/AboutBox';
+import { abouts } from '../../data/abouts';
+import styles from './About.module.css';
 
 function About() {
   return (
     <>
       <section
-        id="about"
+        id='about'
         className={`section ${styles.sectionAbout} flex flex-center`}
       >
         <div
           className={`${styles.aboutContainer} flex flex-center flex-column`}
         >
           <p className={styles.devDescription}>
-            Hi, I'm <strong>Armando</strong>, a{" "}
-            <strong>Front-End Developer</strong> with more than{" "}
-            <strong>1 year and a half of experience</strong> creating modern,
-            and responsive applications.
+            Hi, I'm <strong>Armando</strong>, a{' '}
+            <strong>Full-Stack Software Developer</strong> who has been building
+            modern, responsive, and scalable applications for{' '}
+            <strong>over a year</strong> through personal projects and
+            continuous learning.
           </p>
 
           <div className={styles.stacksBox}>
-            {abouts.map((a) => {
+            {abouts.map(a => {
               return (
                 <AboutBox
                   key={a.key}
